@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/espana-icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Espana </title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/espana.jpg"
+          class="nav__logo"
+          id="logo"
+        />
+        <!-- <div class="nav__text" onclick="alert('HTML onclick')"></div> -->
+        <div class="nav__text">Visateka</div>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Помощь</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal-window" href="#"
+              >Как получить ВНЖ</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Когда
+          <!-- Эффект выделения фона -->
+          <span class="highlight">путешествовать</span>
+          <br />
+          <span class="highlight">просто!</span>
+        </h1>
+        <h4>Расскажем о том, как получить вид на жительство в Испании и сколько занимает времени на процесс.</h4>
+        <button class="btn--text btn--scroll-to">
+          Узнать больше &DownArrow;
+        </button>
+        <img
+          src="img/espana-img.png"
+          class="header__img"
+
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Услуги</h2>
+        <h3 class="section__header">Visateka — это российские и испанские адвокаты, иммиграционные эксперты с опытом работы более 10 лет.</h3>
+      </div>
+
+      <div class="services">
+        <img
+          src="img/espana-img2.jpg"
+          class="services__img lazy-img"
+        />
+        <div class="services__feature">
+          <div class="services__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-activity"></use>
+            </svg>
+          </div>
+          <h5 class="services__header">Бесплатная оценка шансов на получение ВНЖ в вашей ситуации</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+            feugiat orci. Integer ut mauris nec sapien viverra condimentum sed
+            at eros. Donec vitae odio non mauris convallis congue. Quisque id
+            rhoncus elit. Nam accumsan facilisis felis.
+          </p>
+        </div>
+
+        <div class="services__feature">
+          <div class="services__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-compass"></use>
+            </svg>
+          </div>
+          <h5 class="services__header">Консультация с пошаговым планом подачи документов на ВНЖ</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+            feugiat orci. Integer ut mauris nec sapien viverra condimentum sed
+            at eros. Donec vitae odio non mauris convallis congue. Quisque id
+            rhoncus elit. Nam accumsan facilisis felis.
+          </p>
+        </div>
+        <img
+          src="img/espana-img3.webp"
+          class="services__img lazy-img"
+        />
+
+        <img
+          src="img/espana-img4.jpg"
+          class="services__img lazy-img"
+        />
+        <div class="services__feature">
+          <div class="services__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-book-open"></use>
+            </svg>
+          </div>
+          <h5 class="services__header">Понимание требований Консульства благодаря постоянной практике</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+            feugiat orci. Integer ut mauris nec sapien viverra condimentum sed
+            at eros. Donec vitae odio non mauris convallis congue. Quisque id
+            rhoncus elit. Nam accumsan facilisis felis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Помощь</h2>
+        <h3 class="section__header">Что мы предлагаем:</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="
+              btn
+              operations__tab operations__tab--1 operations__tab--active
+            "
+            data-tab="1"
+          >
+            <span></span>
+            Юридическая помощь
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span></span>
+            Пошаговый план
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span></span>
+            Документы
+          </button>
+        </div>
+        <div
+          class="
+            operations__content
+            operations__content--1
+            operations__content--active
+          "
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-paperclip"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Разработаем юридическую стратегию
+взаимодействия с Консульством для получения ВНЖ и снижения риска отказа
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+            feugiat orci. Integer ut mauris nec sapien viverra condimentum sed
+            at eros. Donec vitae odio non mauris convallis congue. Quisque id
+            rhoncus elit. Nam accumsan facilisis felis.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-printer"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Подготовим пошаговый план
+            сбора, перевода и логистики документов между странами
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+            feugiat orci. Integer ut mauris nec sapien viverra condimentum sed
+            at eros. Donec vitae odio non mauris convallis congue. Quisque id
+            rhoncus elit. Nam accumsan facilisis felis.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-briefcase"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Соберем документы,
+            поможем с возникающими сложностями во время сбора бумаг
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+            feugiat orci. Integer ut mauris nec sapien viverra condimentum sed
+            at eros. Donec vitae odio non mauris convallis congue. Quisque id
+            rhoncus elit. Nam accumsan facilisis felis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--reviews">
+        <h2 class="section__description">Всё ещё не уверены?</h2>
+        <h3 class="section__header">
+          Тысячи наших клиентов уже граждане Испании!
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="review">
+            <h5 class="review__header">Благодарю команду Испанского Бюро за помощь и консультации на протяжении последних двух лет. С самого начала команда разработала стратегию для каждого члена семьи, учитывая все наши потребности.</h5>
+            <blockquote class="review__text">
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+              feugiat orci. Integer ut mauris nec sapien viverra condimentum sed
+              at eros. Donec vitae odio non mauris convallis congue. Quisque id
+              rhoncus elit. Nam accumsan facilisis felis. -->
+            </blockquote>
+            <address class="review__author">
+              <img
+                src="img/user-1.png"
+                alt="Фото пользователя"
+                class="review__photo"
+              />
+              <h6 class="review__name">Александра Мищенко</h6>
+              <p class="review__location">Минск, Беларусь</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="review">
+            <h5 class="review__header">
+              Большое спасибо Испанскому бюро за помощь в получении документов ВНЖ! Компания показала высокий уровень обслуживания и компетентности.
+              Отдельная благодарность моему менеджеру Иванову Ивану за его профессионализм, отзывчивость и оперативные ответы на все вопросы.
+            </h5>
+            <blockquote class="review__text">
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+              feugiat orci. Integer ut mauris nec sapien viverra condimentum sed
+              at eros. Donec vitae odio non mauris convallis congue. Quisque id
+              rhoncus elit. Nam accumsan facilisis felis. -->
+            </blockquote>
+            <address class="review__author">
+              <img
+                src="img/user-2.png"
+                alt="Фото пользователя"
+                class="review__photo"
+              />
+              <h6 class="review__name">Рэй Уиллис</h6>
+              <p class="review__location">Нью Йорк, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="review">
+            <h5 class="review__header">
+              Благодарю Испанское Бюро за помощь в получении студенческой визы в Стамбуле. Все было организовано очень комфортно, профессионально и оперативно. Однозначно рекомендую всем!
+            </h5>
+            <blockquote class="review__text">
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+              feugiat orci. Integer ut mauris nec sapien viverra condimentum sed
+              at eros. Donec vitae odio non mauris convallis congue. Quisque id
+              rhoncus elit. Nam accumsan facilisis felis. -->
+            </blockquote>
+            <address class="review__author">
+              <img
+                src="img/user-3.png"
+                alt="Фото пользователя"
+                class="review__photo"
+              />
+              <h6 class="review__name">Глеб Михайлов</h6>
+              <p class="review__location">Москва, Россия</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Откройте для себя мир путешествий уже сейчас!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal-window">Обратиться за консультацией</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">О Нас</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Расценки</a>
+        </li>
+       
+        <li class="footer__item">
+          <a class="footer__link" href="#">Политика Конфиденциальности</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Блог</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Свяжитесь С Нами</a>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="modal-window hidden">
+      <button class="btn--close-modal-windw">&times;</button>
+      <h2 class="modal__header">
+         Обращение <br />
+         к <span class="highlight">консультанту</span>
+      </h2>
+      <form class="modal__form">
+        <label>Имя</label>
+        <input type="text" />
+        <label>Фамилия</label>
+        <input type="text" />
+        <label>Email</label>
+        <input type="email" />
+        <button class="btn">Далее &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
